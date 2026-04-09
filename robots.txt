@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://password-generator-eight-ruby-12.vercel.app/sitemap.xml
