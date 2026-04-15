@@ -251,12 +251,6 @@ input[type=range]::-webkit-slider-thumb:hover { transform: scale(1.2); }
 .policy-body h3 { font-size: 1.1rem; color: #38bdf8; margin: 1.5rem 0 0.5rem; }
 .policy-body p { font-size: 0.95rem; color: rgba(255,255,255,0.7); line-height: 1.6; }
 
-@media (max-width: 600px) {
-    .container { padding: 1.5rem; }
-    .card { padding: 2rem; }
-    .modal-content { padding: 2rem; }
-}
-
 /* Instructions */
 .instructions {
     background: rgba(255, 255, 255, 0.02);
@@ -305,7 +299,23 @@ input[type=range]::-webkit-slider-thumb:hover { transform: scale(1.2); }
 }
 .toast.show { bottom: 30px; opacity: 1; }
 
+@media (max-width: 600px) {
+    .container { padding: 1.5rem; }
+    .card { padding: 2rem; }
+    .modal-content { padding: 2rem; }
+}
+
 @media (max-width: 480px) {
-    .container { padding: 20px; }
-    h1 { font-size: 1.5rem; }
+    .container { padding: 1.25rem; width: 95%; }
+    h1 { font-size: 1.6rem; }
+    .password-display { font-size: 1.2rem; }
+    .generate-btn { padding: 15px; font-size: 1rem; }
+}
+
+@media (max-width: 380px) {
+    .container { padding: 1rem; }
+    .password-display { font-size: 1.1rem; }
+    .strength-header { font-size: 0.75rem; }
+    .strength-bars { gap: 4px; }
+    .setting-header { font-size: 0.85rem; }
 }
