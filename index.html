@@ -47,16 +47,24 @@
         <div class="glow glow-2"></div>
     </div>
 
+    <!-- シンプルナビゲーション -->
+    <nav class="top-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">PassGuard</a>
+            <div class="nav-links">
+                <a href="#about">PassGuardとは？</a>
+                <a href="#faq">よくある質問</a>
+                <a href="contact.html">お問い合わせ</a>
+            </div>
+        </div>
+    </nav>
+
     <main class="container">
         <header>
             <h1>パスガード <span class="accent-text">(PassGuard)</span></h1>
             <p>Cryptographically Secure Password Generator</p>
         </header>
-
-        <!-- Ad placeholder (Top) -->
-        <div class="ad-banner top-ad">
-            <div class="ad-content">スポンサーリンク (Google AdSense 1)</div>
-        </div>
+        <!-- Ads removed for approval -->
 
         <section class="result-container">
             <div class="password-display" id="passwordDisplay">
@@ -116,45 +124,55 @@
             <button id="generateBtn" class="generate-btn">パスワードを生成する</button>
         </section>
 
-        <section class="instructions">
-            <h3>💡 このツールの使い方・特徴</h3>
-            <ul>
-                <li><strong>オプションを指定</strong>して生成ボタンを押すだけで、安全なランダムパスワードが作成されます。</li>
-                <li><strong>最高水準のセキュリティ</strong>：データは外部（サーバー）へ一切送信されず、あなたのブラウザ内だけで計算・完結するため情報漏洩リスクがありません。</li>
-                <li><strong>強度に注目</strong>：バーが「緑色（STRONG）」になるように、文字数を増やしてご利用ください。</li>
-            </ul>
+        <!-- 親しみやすい解説セクション -->
+        <section id="about" class="friendly-content">
+            <h2>💡 パスワード作り、悩んでいませんか？</h2>
+            <p>新しいサービスに登録するたびに「パスワードはどうしよう…」「また同じものを使い回してしまおうか…」と悩むことはありませんか？実は、同じパスワードの使い回しは、一つが漏れると他のアカウントも危険にさらされてしまうため、非常に危険です。</p>
+            <p><strong>PassGuard（パスガード）</strong>は、そんなお悩みを一瞬で解決するツールです。ボタンを押すだけで、ハッカーに解読されにくい「ランダムで強力なパスワード」をあっという間に作成できます！</p>
+            
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <h3>🔒 スマホやPCの中だけで完結</h3>
+                    <p>このツールの一番の特長は「とっても安全」なことです。作成したパスワードがインターネットを通じてどこかのサーバーに送られることは<strong>絶対にありません</strong>。あなたの画面の中だけで計算される仕組みなので、情報漏れの心配なく安心して使えます。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>✅ コピーもワンタッチ</h3>
+                    <p>せっかく作った複雑なパスワードも、入力するのは面倒ですよね。結果の横にある 📋（コピーボタン）を押せば、すぐにクリップボードに保存されるので、そのまま登録画面に貼り付ける（ペーストする）だけです。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQセクション -->
+        <section id="faq" class="friendly-content">
+            <h2>❓ よくあるご質問 (FAQ)</h2>
+            <div class="faq-item">
+                <h4>Q. 無料で使えますか？</h4>
+                <p>A. はい！すべての機能を完全無料で、何度でもお使いいただけます。</p>
+            </div>
+            <div class="faq-item">
+                <h4>Q. パスワードの文字数はどれくらいが良いですか？</h4>
+                <p>A. 安全性を考えると、可能であれば「12文字以上」をおすすめします。特に大切なアカウント（銀行やメールなど）では「16文字以上で記号を含む」設定をご利用ください。画面の「セキュリティ強度」が緑色（STRONG）になれば安心です！</p>
+            </div>
+            <div class="faq-item">
+                <h4>Q. 作ったパスワードはどうやって管理すればいい？</h4>
+                <p>A. 複雑なパスワードを頭で覚えるのは大変です。お使いのスマホの機能（iCloudキーチェーンやGoogleパスワードマネージャーなど）に保存するか、紙のノートに書き留めて大切に保管するなどの方法をおすすめします。</p>
+            </div>
         </section>
     </main>
 
-    <!-- Ad placeholder (Bottom 2) -->
-    <div class="ad-banner bottom-ad">
-        <div class="ad-content">スポンサーリンク (Google AdSense 4)</div>
-    </div>
+    <!-- Ads removed for approval -->
 
     <footer class="app-footer">
         <div class="footer-content">
-            <p>&copy; 2026 Secure Gen. All rights reserved.</p>
+            <p>&copy; 2026 PassGuard. All rights reserved.</p>
             <div class="footer-links">
-                <a href="#privacy-policy" id="policy-trigger">プライバシーポリシー</a>
+                <a href="index.html">ホーム</a>
+                <a href="privacy-policy.html">プライバシーポリシー</a>
+                <a href="terms.html">利用規約</a>
+                <a href="contact.html">お問い合わせ</a>
             </div>
         </div>
     </footer>
-
-    <!-- Privacy Policy Modal (Simple CSS-based modal) -->
-    <div id="privacy-policy" class="modal-overlay">
-        <div class="modal-content">
-            <a href="#" class="close-modal">&times;</a>
-            <h2>プライバシーポリシー</h2>
-            <div class="policy-body">
-                <h3>1. セキュリティと安全性</h3>
-                <p>当ツールで生成されるパスワードは、お客様のブラウザ内（ローカル）で計算されます。生成されたパスワードや設定値が外部のサーバーに送信されることは一切ありません。</p>
-                <h3>2. アクセス解析・広告について</h3>
-                <p>サービス向上のため Google Analytics を、広告配信のため Google AdSense を利用しています。これらはCookieを使用しますが、個人を特定する情報は収集しません。</p>
-                <h3>3. 免責事項</h3>
-                <p>生成されたパスワードの管理はお客様の責任において行ってください。本ツールの利用による損害について、当サイトは一切の責任を負いません。</p>
-            </div>
-        </div>
-    </div>
 
     <!-- トースト通知 (コピー完了時など) -->
     <div id="toast" class="toast">クリップボードにコピーしました！</div>
